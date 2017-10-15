@@ -1,0 +1,22 @@
+{
+  "name": "task-interface-demos",
+  "version": "1.0.0",
+  "description": "Bunch of tasks interface demos with text vs. pictogram interface demos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocidique/task-interface-demos.git"
+  },
+  "author": "Juho Pekkala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocidique/task-interface-demos/issues"
+  },
+  "homepage": "https://github.com/ocidique/task-interface-demos#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
