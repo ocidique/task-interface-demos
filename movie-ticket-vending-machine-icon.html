@@ -2,13 +2,66 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <title>Movie ticket vending machine icon version demo</title>
+    <title>Movie ticket vending machine text version demo</title>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/movie_tickets/iconversion.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>foo</h1>
+	<div style="width:100%; margin-bottom:150px;" >
+		<div style="float:left; width:50%;">
+			<div id="movies" class="vertical-menu">
+				<a href="#" class="active"><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a>
+				<a href="#" ><img src="images/gone-in-the-wind.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/jaws.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/terminator.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/titanic.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+			</div>
+		</div>
+		<div style="float:right; width:50%;">
+			<button type="button" id="ticketbutton" class="btn btn-default" style="margin-left: 150px;"><span class="glyphicon glyphicon-minus"></span></button>
+			<p id="ticketind"><span class="glyphicon glyphicon-tags"></span></p>
+			<button type="button" id="ticketbutton" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+			<p id="ticketnum">3</p>
+			<div>
+				<div style="float:left; width:50%;">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:175px;height:50px;"><img src="images/seat_icon.png" style="width:75px;height:40px;border:0;">
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">C4</a></li>
+							<li><a href="#">C5</a></li>
+							<li><a href="#">C6</a></li>
+							<li><a href="#">D6</a></li>
+							<li><a href="#">E16</a></li>
+							<li><a href="#">E17</a></li>
+							<li><a href="#">E18</a></li>
+							<li><a href="#">F8</a></li>
+							<li><a href="#">F9</a></li>
+						</ul>
+					</div>
+				</div>
+				<div style="float:right; width:50%; margin-right:100px;">
+					<ul class="list-group">
+						<li class="list-group-item active">C1</li>
+						<li class="list-group-item">C2</li>
+						<li class="list-group-item">C3</li>
+					</ul>
+				</div>
+			</div>
+			<div style="float:right; width:100%; margin-top:150px;">
+				<button type="button" id="clearbutton" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+				<button type="button" id="continuebutton" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+			</div>
+		</div>
 
+	</div>
 </body>
 
 </html>

@@ -1,0 +1,97 @@
+ul {
+	list-style-type: none;
+	margin: 5px;
+	padding: 2px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#selecth {
+	margin-top: 130px;
+	margin-left: 250px;
+	text-decoration: underline;
+}
+
+#movies {
+	margin-top: 0px;
+	margin-left: 250px;
+}
+
+#ticketsh {
+	margin-top: 130px;
+	margin-left: 150px;
+	margin-bottom: 30px;
+	text-decoration: underline;
+}
+
+#ticketbutton {
+	display: inline-block;
+	width: 130px;
+	font-size: 24px;
+	width: 150px;
+	height: 50px;
+}
+
+#ticketind {
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 24px;
+}
+
+#ticketnum {
+	display: inline-block;
+	margin-left: 175px;
+	margin-right: 50px;
+	font-size: 24px;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+#seatsh {
+	margin-top: 30px;
+	margin-left: 150px;
+	text-decoration: underline;
+}
+
+.dropdown {
+	margin-top: 50px;
+}
+
+#selectedsh {
+	margin-top: -30px;
+}
+
+.list-group {
+	height: 300px;
+
+}
+
+#clearbutton {
+	display: inline-block;
+	font-size: 24px;
+	padding: 20px;
+	width: 250px;
+	height: 100px;
+}
+
+#continuebutton {
+	display: inline-block;
+	margin-left: 400px;
+	font-size: 24px;
+	padding: 20px;
+	width: 250px;
+	height: 100px;
+}
+
+
+.vertical-menu {
+    width: 400px;
+    height: 600px;
+    overflow-y: auto;
+}

@@ -4,11 +4,69 @@
 <head>
     <title>Movie ticket vending machine text version demo</title>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/movie_tickets/textversion.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>foo</h1>
+	<div style="width:100%">
+		<h1>Movie ticket vending machine</h1>
+		<div style="float:left; width:50%;">
+			<h2 id="selecth">Select a movie:</h2>
+			<div id="movies" class="vertical-menu">
+				<p><a href="#" class="active">Movie 1</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 2</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 3</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 4</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 5</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 6</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 7</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				<p><a href="#" >Movie 8</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+			</div>
+		</div>
+		<div style="float:right; width:50%;">
+			<h2 id="ticketsh">Choose the amount of tickets:</h2>
+			<button type="button" id="ticketbutton" class="btn btn-default" style="margin-left: 150px;">Remove</button>
+			<p id="ticketind">Tickets</p>
+			<button type="button" id="ticketbutton" class="btn btn-default" >Add</button>
+			<p id="ticketnum">3</p>
+			<h2 id="seatsh">Choose the seats:</h2>
+			<div>
+				<div style="float:left; width:50%;">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:175px;height:50px;">Seats
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">C4</a></li>
+							<li><a href="#">C5</a></li>
+							<li><a href="#">C6</a></li>
+							<li><a href="#">D6</a></li>
+							<li><a href="#">E16</a></li>
+							<li><a href="#">E17</a></li>
+							<li><a href="#">E18</a></li>
+							<li><a href="#">F8</a></li>
+							<li><a href="#">F9</a></li>
+						</ul>
+					</div>
+				</div>
+				<div style="float:right; width:50%; margin-right:100px;">
+					<p id="selectedsh">Selected</p>
+					<ul class="list-group">
+						<li class="list-group-item active">C1</li>
+						<li class="list-group-item">C2</li>
+						<li class="list-group-item">C3</li>
+					</ul>
+				</div>
+			</div>
+			<div style="float:right; width:100%; margin-top:150px;">
+				<button type="button" id="clearbutton" class="btn btn-default">Clear</button>
+				<button type="button" id="continuebutton" class="btn btn-default">Buy</button>
+			</div>
+		</div>
 
+	</div>
 </body>
 
 </html>

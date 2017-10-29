@@ -1,0 +1,72 @@
+ul {
+	list-style-type: none;
+	margin: 5px;
+	padding: 2px;
+}
+
+
+#movies {
+	margin-top: 0px;
+	margin-left: 250px;
+	width: 440px;
+}
+
+#ticketbutton {
+	display: inline-block;
+	width: 130px;
+	font-size: 24px;
+	width: 150px;
+	height: 50px;
+}
+
+
+#ticketnum {
+	display: inline-block;
+	margin-left: 175px;
+	margin-right: 50px;
+	font-size: 24px;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+
+.dropdown {
+	margin-top: 50px;
+}
+
+.list-group {
+	height: 300px;
+
+}
+
+#clearbutton {
+	display: inline-block;
+	font-size: 24px;
+	padding: 20px;
+	width: 250px;
+	height: 100px;
+}
+
+#continuebutton {
+	display: inline-block;
+	margin-left: 400px;
+	font-size: 24px;
+	padding: 20px;
+	width: 250px;
+	height: 100px;
+}
+
+
+.vertical-menu {
+    width: 400px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+#ticketind {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 24px;
+}
