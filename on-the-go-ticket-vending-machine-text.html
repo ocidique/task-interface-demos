@@ -2,12 +2,152 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <title>On the go - transportation ticket vending machine text version demo</title>
+    <title>On the go - transportation ticket vending machine icon version demo</title>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/on-the-go/styles.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <h1>foo</h1>
+<body id="on-the-go">
+
+    <div id="step-1">
+        <header>
+            <h1>ON THE GO</h1>
+            <h2>Transportation ticket machine</h2>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-3">
+                    <div class="start-button-wrapper">
+                        <button class="btn">Bus</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="start-button-wrapper">
+                        <button class="btn">Train</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="step-2">
+        <nav>
+            <div class="row">
+
+                <div class="col-sm-8">
+                    <div id="tickets">
+                        <p id="tickets-label">Tickets: </p>
+                        <button id="less" class="btn">Less</button>
+                        <p id="amount">1</p>
+                        <button id="more" class="btn">More</button>
+                        <p id="total-price">6,80 euros</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <header>
+                        <h1>ON THE GO</h1>
+                    </header>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div id="departure-wrapper">
+
+                    <div class="col-sm-2 col-sm-offset-3">
+                        <button class="btn">Previous departure</button>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div id="time-wrapper">
+                            <p>It's 11:58 AM</p>
+                            <h1>12:40</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button class="btn">Next departure</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="timeline-wrapper">
+
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <div id="departure">
+                            <p>Departure</p>
+                            <p>12:40</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <p class="dash"> - - - - - - - - - - - - - - </p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div id="travel-time">
+                            <p>Travel time</p>
+                            <p>30min</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <p class="dash"> - - - - - - - - - - - - - - </p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div id="arrival">
+                            <p>Arrival</p>
+                            <p>13:10</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <button id="cancel" class="btn ">Cancel</button>
+                </div>
+
+                <div class="col-sm-6">
+                    <button id="buy" class="btn ">Buy</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="step-3">
+
+        <div class="jumbotron">
+            <h1>Thanks</h1>
+        </div>
+
+
+        <h1>Duration
+            <span id="duration">123 seconds</span>
+        </h1>
+
+
+    </div>
 
 </body>
 
