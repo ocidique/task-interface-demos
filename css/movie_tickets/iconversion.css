@@ -11,7 +11,15 @@ ul {
 	width: 440px;
 }
 
-#ticketbutton {
+#ticketbuttonminus {
+	display: inline-block;
+	width: 130px;
+	font-size: 24px;
+	width: 150px;
+	height: 50px;
+}
+
+#ticketbuttonplus {
 	display: inline-block;
 	width: 130px;
 	font-size: 24px;
@@ -69,4 +77,8 @@ ul {
 	margin-left: 50px;
 	margin-right: 50px;
 	font-size: 24px;
+}
+
+a:active {
+    color: blue;
 }

@@ -8,56 +8,54 @@
 	<link rel="stylesheet" type="text/css" href="css/movie_tickets/iconversion.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/movies.js"></script>
 </head>
 
 <body>
 	<div style="width:100%; margin-bottom:150px;" >
 		<div style="float:left; width:50%;">
 			<div id="movies" class="vertical-menu">
-				<a href="#" class="active"><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a>
-				<a href="#" ><img src="images/gone-in-the-wind.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/jaws.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/terminator.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/titanic.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
-				<a href="#" ><img src="images/fightclub.jpg" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" class="active"><img src="images/fightclub.jpg" id="movie1" onclick="selectimage('movie1')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a>
+				<a href="#" ><img src="images/gone-in-the-wind.jpg" id="movie2" onclick="selectimage('movie2')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/jaws.jpg" id="movie3" onclick="selectimage('movie3')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/terminator.jpg" id="movie4" onclick="selectimage('movie4')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/titanic.jpg" id="movie5" onclick="selectimage('movie5')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" id="movie6" onclick="selectimage('movie6')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" id="movie7" onclick="selectimage('movie7')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
+				<a href="#" ><img src="images/fightclub.jpg" id="movie8" onclick="selectimage('movie8')" style="width:400px;height:200px;border:0;margin-bottom:5px;"></a> 
 			</div>
 		</div>
 		<div style="float:right; width:50%;">
-			<button type="button" id="ticketbutton" class="btn btn-default" style="margin-left: 150px;"><span class="glyphicon glyphicon-minus"></span></button>
+			<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 150px;"><span class="glyphicon glyphicon-minus"></span></button>
 			<p id="ticketind"><span class="glyphicon glyphicon-tags"></span></p>
-			<button type="button" id="ticketbutton" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-			<p id="ticketnum">3</p>
+			<button type="button" id="ticketbuttonplus" onclick="incrementValue()" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+			<input type="text" id="tickectnum" value="0"></input>
 			<div>
 				<div style="float:left; width:50%;">
 					<div class="dropdown">
 						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:175px;height:50px;"><img src="images/seat_icon.png" style="width:75px;height:40px;border:0;">
 						<span class="caret"></span></button>
 						<ul class="dropdown-menu">
-							<li><a href="#">C4</a></li>
-							<li><a href="#">C5</a></li>
-							<li><a href="#">C6</a></li>
-							<li><a href="#">D6</a></li>
-							<li><a href="#">E16</a></li>
-							<li><a href="#">E17</a></li>
-							<li><a href="#">E18</a></li>
-							<li><a href="#">F8</a></li>
-							<li><a href="#">F9</a></li>
+							<li id="C4"><a href="#" onclick="addseat('C4')">C4</a></li>
+							<li id="C5"><a href="#" onclick="addseat('C5')">C5</a></li>
+							<li id="C6"><a href="#" onclick="addseat('C6')">C6</a></li>
+							<li id="D6"><a href="#" onclick="addseat('D6')">D6</a></li>
+							<li id="E16"><a href="#" onclick="addseat('E16')">E16</a></li>
+							<li id="E17"><a href="#" onclick="addseat('E17')">E17</a></li>
+							<li id="E18"><a href="#" onclick="addseat('E18')">E18</a></li>
+							<li id="F8"><a href="#" onclick="addseat('F8')">F8</a></li>
+							<li id="F9"><a href="#" onclick="addseat('F9')">F9</a></li>
 						</ul>
 					</div>
 				</div>
 				<div style="float:right; width:50%; margin-right:100px;">
-					<ul class="list-group">
-						<li class="list-group-item active">C1</li>
-						<li class="list-group-item">C2</li>
-						<li class="list-group-item">C3</li>
+					<ul id="selectedtseats" class="list-group">
 					</ul>
 				</div>
 			</div>
 			<div style="float:right; width:100%; margin-top:150px;">
-				<button type="button" id="clearbutton" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-				<button type="button" id="continuebutton" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()"><span class="glyphicon glyphicon-remove"></span></button>
+				<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()"><span class="glyphicon glyphicon-ok"></span></button>
 			</div>
 		</div>
 
