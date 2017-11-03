@@ -11,95 +11,96 @@ h1 {
 	margin-top: 30px;
 }
 
+h2 {
+	font-size: 20px;
+}
+
 #selecth {
-	margin-top: 130px;
-	margin-left: 250px;
+	margin-top: 20px;
+	margin-left: 10px;
 	text-decoration: underline;
 }
 
 #movies {
 	margin-top: 0px;
-	margin-left: 250px;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 #ticketsh {
-	margin-top: 130px;
-	margin-left: 150px;
+	margin-top: 22px;
+	margin-left: 20px;
 	margin-bottom: 30px;
 	text-decoration: underline;
 }
 
 #ticketbuttonminus {
 	display: inline-block;
-	width: 130px;
-	font-size: 24px;
-	width: 150px;
-	height: 50px;
+	font-size: 14px;
+	width: 75px;
+	height: 30px;
 }
 
 #ticketbuttonplus {
 	display: inline-block;
-	width: 130px;
-	font-size: 24px;
-	width: 150px;
-	height: 50px;
+	font-size: 14px;
+	width: 75px;
+	height: 30px;
 }
 
 #ticketind {
 	display: inline-block;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 24px;
 }
 
 #ticketnum {
 	display: inline-block;
-	margin-left: 175px;
-	margin-right: 50px;
-	font-size: 24px;
-	border: 2px solid black;
-	padding: 20px;
+	font-size: 14px;
 }
 
 #seatsh {
 	margin-top: 30px;
-	margin-left: 150px;
+	margin-left: 35px;
 	text-decoration: underline;
+	width: 175px;
 }
 
 .dropdown {
 	margin-top: 50px;
+	margin-left: 20px;
 }
 
 #selectedsh {
-	margin-top: -30px;
+		margin-top: 30px;
+		margin-left: 100px;
 }
 
 .list-group {
-	height: 300px;
+	height: 190px;
 
 }
 
 #clearbutton {
 	display: inline-block;
-	font-size: 24px;
-	padding: 20px;
-	width: 250px;
-	height: 100px;
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+	vertical-align: middle;
 }
 
 #continuebutton {
 	display: inline-block;
-	margin-left: 400px;
-	font-size: 24px;
-	padding: 20px;
-	width: 250px;
-	height: 100px;
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+	margin-left: 50px;
 }
 
 
 .vertical-menu {
-    width: 400px;
-    height: 600px;
     overflow-y: auto;
+	height: 370px;
 }

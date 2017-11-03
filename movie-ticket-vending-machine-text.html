@@ -12,58 +12,77 @@
 </head>
 
 <body>
-	<div style="width:100%">
+	<div class="container">
 		<h1>Movie ticket vending machine</h1>
-		<div style="float:left; width:50%;">
-			<h2 id="selecth">Select a movie:</h2>
-			<div id="movies" class="vertical-menu">
-				<p id="movie1" onclick="selectmovie('movie1')"><a href="#" class="active">Movie 1</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie2" onclick="selectmovie('movie2')"> <a href="#" >Movie 2</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie3" onclick="selectmovie('movie3')"><a href="#" >Movie 3</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie4" onclick="selectmovie('movie4')"><a href="#" >Movie 4</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie5" onclick="selectmovie('movie5')"><a href="#" >Movie 5</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie6" onclick="selectmovie('movie6')"><a href="#" >Movie 6</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie7" onclick="selectmovie('movie7')"><a href="#" >Movie 7</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
-				<p id="movie8" onclick="selectmovie('movie8')"><a href="#" >Movie 8</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+		<div class="row">
+			<div class="col-sm-6">
+				<h2 id="selecth">Select a movie:</h2>
+				<div id="movies" class="vertical-menu">
+					<p id="movie1" onclick="selectmovie('movie1')"><a href="#" class="active">Movie 1</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie2" onclick="selectmovie('movie2')"> <a href="#" >Movie 2</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie3" onclick="selectmovie('movie3')"><a href="#" >Movie 3</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie4" onclick="selectmovie('movie4')"><a href="#" >Movie 4</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie5" onclick="selectmovie('movie5')"><a href="#" >Movie 5</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie6" onclick="selectmovie('movie6')"><a href="#" >Movie 6</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie7" onclick="selectmovie('movie7')"><a href="#" >Movie 7</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+					<p id="movie8" onclick="selectmovie('movie8')"><a href="#" >Movie 8</a> <br> This is a describtion of the movie. This is very cool movie and you should come to see this one. This movie tells you a story of a young boy who fights against evil and won.. ups SPOILER nevermind just trying to fills this list to the scrollbar would appear.</p>
+				</div>
 			</div>
-		</div>
-		<div style="float:right; width:50%;">
-			<h2 id="ticketsh">Choose the amount of tickets:</h2>
-			<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 150px;">Remove</button>
-			<p id="ticketind">Tickets</p>
-			<button type="button" id="ticketbuttonplus" class="btn btn-default"  onclick="incrementValue()">Add</button>
-			<input type="text" id="tickectnum" value="0"></input>
-			<h2 id="seatsh">Choose the seats:</h2>
-			<div>
-				<div style="float:left; width:50%;">
-					<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:175px;height:50px;">Seats
-						<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<li id="C4"><a href="#" onclick="addseat('C4')">C4</a></li>
-							<li id="C5"><a href="#" onclick="addseat('C5')">C5</a></li>
-							<li id="C6"><a href="#" onclick="addseat('C6')">C6</a></li>
-							<li id="D6"><a href="#" onclick="addseat('D6')">D6</a></li>
-							<li id="E16"><a href="#" onclick="addseat('E16')">E16</a></li>
-							<li id="E17"><a href="#" onclick="addseat('E17')">E17</a></li>
-							<li id="E18"><a href="#" onclick="addseat('E18')">E18</a></li>
-							<li id="F8"><a href="#" onclick="addseat('F8')">F8</a></li>
-							<li id="F9"><a href="#" onclick="addseat('F9')">F9</a></li>
-						</ul>
+			<div class="col-sm-6">
+				<h2 id="ticketsh">Choose the amount of tickets:</h2>
+				<div class="row">
+					<div class="col-sm-3">
+						<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 25px;">Remove</button>
+					</div>
+					<div class="col-sm-4">
+						<p id="ticketind">Tickets</p>
+					</div>
+					<div class="col-sm-3">
+						<button type="button" id="ticketbuttonplus" class="btn btn-default"  onclick="incrementValue()">Add</button>
+					</div>
+					<div class="col-sm-2">
+						<input type="text" id="tickectnum" value="0" class="form-control"></input>
 					</div>
 				</div>
-				<div style="float:right; width:50%; margin-right:100px;">
-					<p id="selectedsh">Selected</p>
-					<ul id="selectedtseats" class="list-group" >
-					</ul>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<h2 id="seatsh">Choose the seats:</h2>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:20px;width:150px;height:40px;">Seats
+								<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li id="C4"><a href="#" onclick="addseat('C4')">C4</a></li>
+									<li id="C5"><a href="#" onclick="addseat('C5')">C5</a></li>
+									<li id="C6"><a href="#" onclick="addseat('C6')">C6</a></li>
+									<li id="D6"><a href="#" onclick="addseat('D6')">D6</a></li>
+									<li id="E16"><a href="#" onclick="addseat('E16')">E16</a></li>
+									<li id="E17"><a href="#" onclick="addseat('E17')">E17</a></li>
+									<li id="E18"><a href="#" onclick="addseat('E18')">E18</a></li>
+									<li id="F8"><a href="#" onclick="addseat('F8')">F8</a></li>
+									<li id="F9"><a href="#" onclick="addseat('F9')">F9</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<p id="selectedsh">Selected</p>
+							<ul id="selectedtseats" class="list-group" >
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Clear</button>
+					</div>
+					<div class="col-sm-6">
+						<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()">Buy</button>
+					</div>
 				</div>
 			</div>
-			<div style="float:right; width:100%; margin-top:150px;">
-				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Clear</button>
-				<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()">Buy</button>
-			</div>
 		</div>
-
 	</div>
 </body>
 

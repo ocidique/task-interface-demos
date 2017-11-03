@@ -34,6 +34,7 @@ function clearall()
 	}
 	movies.forEach(unselectmovie);
 	movies.forEach(unselectimage);
+	window.history.back();
 }
 
 function addseat(seat)
