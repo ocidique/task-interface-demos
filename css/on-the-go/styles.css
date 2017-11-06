@@ -94,7 +94,9 @@ button#train {
 #step-2 header {
   float: right;
 }
-
+#current-departure {
+  font-size: 30px;
+}
 #departure-wrapper {
   margin-top: 10%;
   text-align: center;
@@ -117,7 +119,8 @@ button#train {
 }
 
 #confirm,
-#cancel {
+#cancel,
+#buy {
   position: fixed;
   bottom: 20px;
   width: 100px;
@@ -144,6 +147,12 @@ button#train {
 
 #buy {
   right: 20px;
+}
+
+.confirmation {
+  max-width: 200px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 /* -----------------------------------------------------------------------------

@@ -2,7 +2,7 @@ $(document).ready(function() {
   var tranportationType;
   var minAmountOfTickets = 1;
   var amountOfTickets = 1;
-  var ticketPrice = 6.8;
+  var ticketPrice = 6.80;
   var totalPrice = ticketPrice;
   var departureInterval = 20;
   var currentDepartureInterval = 20;
@@ -18,7 +18,7 @@ $(document).ready(function() {
         tranportationType = this.id;
         $("#step-1").hide();
         $("#step-2").show();
-        $("#tranportation-type").text(tranportationType);
+        $("#tranportation-type").addClass(tranportationType);
         break;
 
       case "less":

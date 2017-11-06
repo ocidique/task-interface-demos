@@ -1,42 +1,35 @@
-#on-the-go {
-  background-color: #f7f7f7;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-nav {
-  min-height: 80px;
-  background-color: #ffee00;
-}
-
 /* -----------------------------------------------------------------------------
  *
- * Step 1 styles 
+ * Step 1 icons 
  * 
  */
 
-#step-1 {
-  /* display: none; */
+.header-icons {
+  max-width: 360px;
+  margin: 0 auto;
 }
-
-#step-1 header {
-  margin-top: 5%;
-  text-align: center;
+#header-icon-1 {
+  background: url("/images/on-the-go/on-the-go.png") no-repeat center center;
+  height: 120px;
+  width: 120px;
 }
-
-#step-1 button {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-color: #ffee00;
-  font-size: 4rem;
+#header-icon-2 {
+  background: url("/images/on-the-go/ticket.png") no-repeat center center;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
 }
-
-#step-1 .start-button-wrapper {
-  margin-top: 50%;
+#header-icon-3 {
+  background: url("/images/on-the-go/airplane.png") no-repeat center center;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+}
+#bus {
+  background: url("/images/on-the-go/bus.png") no-repeat center center;
+}
+#train {
+  background: url("/images/on-the-go/train.png") no-repeat center center;
 }
 
 /* -----------------------------------------------------------------------------
@@ -45,48 +38,71 @@ nav {
  * 
  */
 
-#step-2 {
-  display: none;
-}
-
-#tickets p,
-#tickets button {
-  height: 40px;
-  margin-top: 20px;
-  float: left;
-  margin-right: 20px;
-}
-
-#tickets p {
-  line-height: 40px;
-}
-
 #tickets-label {
+  background: url("/images/on-the-go/ticket.png") no-repeat center center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+#less,
+#more {
+  border: none !important;
+  min-width: 40px;
+  min-height: 40px;
 }
 #less {
+  background: url("/images/on-the-go/minus-button.png") no-repeat center center;
+  background-size: cover;
 }
-#amount {
-  width: 20px;
-  text-align: center;
-  box-sizing: border-box;
-}
-#more  {
-}
-#total-price {
+#more {
+  background: url("/images/on-the-go/plus-button.png") no-repeat center center;
+  background-size: cover;
 }
 
-#step-2 header {
+.small-header-icons {
+  max-width: 240px;
+  margin: 5px auto;
   float: right;
 }
-
-#departure-wrapper {
-  margin-top: 10%;
-  text-align: center;
+#small-header-icon-1 {
+  background: url("/images/on-the-go/on-the-go.png") no-repeat center center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+}
+#small-header-icon-2 {
+  background: url("/images/on-the-go/ticket.png") no-repeat center center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+}
+#small-header-icon-3 {
+  background: url("/images/on-the-go/airplane.png") no-repeat center center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
 }
 
-#departure-wrapper button {
-  height: 100px;
-  white-space: normal;
+#previous-departure {
+  background: url("/images/on-the-go/previous-button.png") no-repeat center
+    center;
+  background-size: cover;
+  border: none !important;
+  height: 100px !important;
+  width: 100px;
+}
+#next-departure {
+  background: url("/images/on-the-go/next-button.png") no-repeat center center;
+  background-size: cover;
+  border: none !important;
+  height: 100px !important;
+  width: 100px;
+}
+
+#current-time {
+  padding-left: 40px;
+  background: url("/images/on-the-go/time.png") no-repeat left center;
+  background-size: 25px;
 }
 
 #timeline-wrapper {
@@ -95,22 +111,59 @@ nav {
 }
 
 #tranportation-type {
-  text-transform: capitalize;
 }
 
-#buy,
-#cancel {
-  position: fixed;
-  bottom: 20px;
+.bus {
+  background: url("/images/on-the-go/bus-stop.png") no-repeat center center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
+}
+.train {
+  background: url("/images/on-the-go/train-stop.png") no-repeat center center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
+}
+
+.dash {
+  margin-top: 40px;
+}
+
+#travel-time {
+  background: url("/images/on-the-go/clock-interval.png") no-repeat center
+    center;
+  background-size: cover;
   width: 100px;
-  height: 70px;
+  height: 100px;
+  margin: 0 auto;
 }
-#cancel {
-  left: 20px;
+#arrival-icon {
+  background: url("/images/on-the-go/airport-departure.png") no-repeat center
+    center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
 }
 
+#cancel {
+  background: url("/images/on-the-go/cancel-button.png") no-repeat center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none !important;
+}
+
+#confirm,
 #buy {
-  right: 20px;
+  background: url("/images/on-the-go/accept-button.png") no-repeat center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border: none !important;
 }
 
 /* -----------------------------------------------------------------------------
@@ -119,7 +172,19 @@ nav {
  * 
  */
 
-#step-3 {
-  display: none;
-  text-align: center;
+#confirm-tickets {
+  padding-left: 40px;
+  background: url("/images/on-the-go/ticket.png") no-repeat left center;
+  background-size: 25px;
+}
+
+#confirm-price {
+  padding-left: 40px;
+  background: url("/images/on-the-go/euro.png") no-repeat left center;
+  background-size: 25px;
+}
+#confirm-departure {
+  padding-left: 40px;
+  background: url("/images/on-the-go/time.png") no-repeat left center;
+  background-size: 25px;
 }
