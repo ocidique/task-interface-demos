@@ -3,11 +3,12 @@ $(document).ready(function() {
   var minAmountOfTickets = 1;
   var amountOfTickets = 1;
   var ticketPrice = 6.8;
-  var totalPrice;
+  var totalPrice = ticketPrice;
   var departureInterval = 20;
   var currentDepartureInterval = 20;
   var today = moment(new Date());
   var currentTime = today.format("hh:mm A");
+  var initialDeparture = currentDeparture();
   var currentDeparture = currentDeparture();
 
   $("button").click(function() {
@@ -71,12 +72,29 @@ $(document).ready(function() {
 
       case "cancel":
         $("#step-2").hide();
+        $("#step-3").hide();
         $("#step-1").show();
+        reset();
+        break;
+
+      case "confirm":
+        $("#step-2").hide();
+        $("#step-3").show();
+        $("#confirm-tickets").text(amountOfTickets);
+        $("#confirm-price").text(totalPrice);
+        $("#confirm-departure").text(currentDepartureTime(currentDeparture));
         break;
 
       case "buy":
-        $("#step-2").hide();
-        $("#step-3").show();
+        $("#step-3").hide();
+        $("#step-4").show();
+        reset();
+        break;
+
+      case "back-to-start":
+        $("#step-4").hide();
+        $("#step-1").show();
+        reset();
         break;
 
       default:
@@ -116,5 +134,17 @@ $(document).ready(function() {
     return moment(currentDeparture)
       .add(departureInterval * 2, "minutes")
       .format("hh:mm A");
+  }
+
+  function reset() {
+    totalPrice = ticketPrice;
+    amountOfTickets = minAmountOfTickets;
+
+    $("#total-price").text(totalPrice);
+    $("#amount").text(amountOfTickets);
+
+    $("#current-departure").text(currentDepartureTime(initialDeparture));
+    $("#departure").text(currentDepartureTime(initialDeparture));
+    $("#arrival").text(arrivalTime(initialDeparture));
   }
 });

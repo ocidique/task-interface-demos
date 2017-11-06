@@ -4,9 +4,11 @@
 <head>
   <title>On the go - transportation ticket vending machine icon version demo</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/on-the-go/styles.css">
+  <link rel="stylesheet" href="css/on-the-go/icons.css">
 
   <script src="js/jquery.min.js"></script>
   <script src="js/moment.js"></script>
@@ -136,7 +138,7 @@
         </div>
 
         <div class="col-sm-6">
-          <button id="buy" class="btn ">Buy</button>
+          <button id="confirm" class="btn ">Confirm</button>
         </div>
 
       </div>
@@ -149,13 +151,51 @@
   <div id="step-3">
 
     <div class="jumbotron">
+      <h1>Confirm</h1>
+    </div>
+
+    <p>Tickets:
+      <span id="confirm-tickets"></span>
+    </p>
+    <p>Total price:
+      <span id="confirm-price"></span>
+      euros
+    </p>
+
+    <p>Departure:
+      <span id="confirm-departure"></span>
+    </p>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <button id="cancel" class="btn ">Cancel</button>
+      </div>
+      <div class="col-sm-6">
+        <button id="buy" class="btn ">Buy</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="step-4">
+
+    <div class="jumbotron">
       <h1>Thanks</h1>
     </div>
 
 
     <h1>Duration
+      <p></p>
       <span id="duration">123 seconds</span>
     </h1>
+
+    <div class="row">
+
+      <div class="col-sm-12">
+        <!-- <button id="back-to-start" class="btn ">Back to start</button> -->
+        <a href="/" id="back-to-start" class="btn ">Back to start</a>
+      </div>
+    </div>
 
 
   </div>
