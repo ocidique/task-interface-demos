@@ -1,14 +1,201 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
+
 <head>
     <title>Fast food machine text version demo</title>
     <meta charset="utf-8">
-</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<style>
+		
+		td:hover { background-color : #ddd; cursor : pointer}
+		
+		textarea.textalign {
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center; 
+    text-align-last: center;
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+		
+	
+	</style>
+	
+	</head>
+
+
 
 <body>
-    <h1>foo</h1>
+	
+		<h1 align = "center">Fast Food Menu</h1>
+		
+			
+				<h3 align ="center">Welcome to UbiBurger !</h3>
+				
+				
+				
+<table id = "table"  style="width:50%" align = "Center" border = "0">
+    <tr>
+    <tr ><h4> <p align = "center">Select a Meal </p></tr>
+  </tr>
+  <tr>
+    <th><p align = "center">Meals</p></th>
+	
+	
+    <th><p align = "center">Hamburgers</p></th>
+
+    <th><p align = "center">Snacks</p></th>
+
+  </tr>
+  <tr>
+    <td>Meaty Meal &nbsp &nbsp 19.50  </td>
+	
+    <td>Meaty Burger &nbsp &nbsp 19.50</td>
+
+    <td>Chicken wings XXL &nbsp &nbsp 19.50</td>
+
+  </tr>
+  <tr>
+    <td>Papas Meal &nbsp &nbsp 19.50</td>
+
+    <td>Papas Burger &nbsp &nbsp 19.50</td>
+
+    <td>Chicken wings M &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+  </tr>
+  <tr>
+    <td>Mamas Meal  &nbsp &nbsp 19.50</td>
+
+    <td>Mamas Burger  &nbsp &nbsp 19.50</td>
+
+    <td>Chicken wings S &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+  </tr>
+  <tr>
+    <td>ubi Kebab &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+    <td>Chicken Burger &nbsp  19.50</td>
+
+    <td>Chicken wings XS  &nbsp &nbsp &nbsp 19.50</td>
+
+  </tr>
+ 
+   <tr>
+    <th><p align = "center">Beverages</p></th>
+
+	
+    <th><p align = "center">Desserts</p></th>
+
+    <th><p align = "center">Breakfast</p></th>
+
+  </tr>
+   <tr>
+    <td>Coke  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+    <td>Ice Cream  &nbsp &nbsp 19.50</td>
+
+    <td>Sausage Platter  &nbsp &nbsp 19.50</td>
+
+  </tr>
+   <tr>
+    <td>Apple Juice  &nbsp &nbsp 19.50</td>
+
+    <td>Muffin  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+    <td>Bacon and Egg  &nbsp &nbsp 19.50</td>
+
+  </tr>
+   <tr>
+    <td>Orange Juice  &nbsp 19.50</td>
+
+    <td>Cookie &nbsp &nbsp &nbsp &nbsp &nbsp 19.50</td>
+
+    <td>Muffin and Egg  &nbsp &nbsp 19.50</td>
+
+  </tr>
+  
+</table> 
+
+
+<script>
+
+/* var table = document.getElementById("table"), rIndex, cIndex;
+ 
+ for (var i = 1; table.rows.lenght; i++)
+ {
+	for( var j =0; j< table.rows[i].cells.lenght; j++)
+	{
+		table.rows[i].cell[j].onclick = function()
+		{
+			rIndex = this.parentElement.rowindex;
+			cIndex = this.cellIndex;
+			
+			
+			<!--Display here
+			
+			document.write("Row : " +rIndex+ ", cell: " + cIndex );
+			
+			
+			
+		};
+	}
+	
+ }
+*/
+
+ var table = document.getElementById('table'),rIndex;
+ 
+ for (var i = 0; i < table.rows.lenght; i++)
+ {
+	
+		table.rows[i].onclick = function()
+		{
+			rIndex = this.rowIndex;
+			document.getElementById("c1").value = this.cells[0].innerHTML;
+			
+			
+			
+		};
+	}
+	
+ 
+</script>
+
+
+<div style = "background-color:red; color:white;padding:40px;">
+<h2 align = "center"> Your Meal </h2>
+               
+			   <!-- Display meal here-->
+			   
+<!-- <input type = "text" name "c1" id = "c1" > <br> -->
+<textarea class = "textalign" rows="4" cols="50" >
+</textarea>
+
+
+<h3 align = "center"> Choose Payment </h3>
+<table  style="width:25%" align = "Center" border = "0">
+    <tr>
+    <td ><h1>Cash </h1></td>
+	<td><h1>Card </h1></td>
+  </tr>
+<tr>
+    <td ><h1>Voucher</h1></td>
+	<td> <h1>Bitcoin </h1></td>
+  </tr>
+  </table>
+
+</div>
+
 
 </body>
+
 
 </html>
