@@ -15,7 +15,7 @@
 	<div class="container">
 		<h1>Movie ticket vending machine</h1>
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-12" id="step-1">
 				<h2 id="selecth">Select a movie:</h2>
 				<div id="movies" class="vertical-menu">
 					<p id="movie1" onclick="selectmovie('movie1')"><a href="#" class="active">Movie 1</a> <br> An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more.</p>
@@ -28,23 +28,28 @@
 					<p id="movie8" onclick="selectmovie('movie8')"><a href="#" >Movie 8</a> <br> An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more.</p>
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<h2 id="ticketsh">Choose the amount of tickets:</h2>
-				<div class="row">
-					<div class="col-sm-3">
-						<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 25px;">Remove</button>
+			<div class="col-sm-12">	
+				<div class="row" id="step-2">
+					<h2 id="ticketsh">Choose the amount of tickets:</h2>
+					<div class="row">
+						<div class="col-sm-3">
+							<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 25px;">Remove</button>
+						</div>
+						<div class="col-sm-4">
+							<p id="ticketind">Tickets</p>
+						</div>
+						<div class="col-sm-3">
+							<button type="button" id="ticketbuttonplus" class="btn btn-default"  onclick="incrementValue()">Add</button>
+						</div>
+						<div class="col-sm-2">
+							<input type="text" id="tickectnum" value="0" class="form-control"></input>
+						</div>
 					</div>
-					<div class="col-sm-4">
-						<p id="ticketind">Tickets</p>
-					</div>
-					<div class="col-sm-3">
-						<button type="button" id="ticketbuttonplus" class="btn btn-default"  onclick="incrementValue()">Add</button>
-					</div>
-					<div class="col-sm-2">
-						<input type="text" id="tickectnum" value="0" class="form-control"></input>
+					<div class="row">
+						<button type="button" id="continue" class="btn btn-default" onclick="nextStep('step-3')">Continue</button>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" id="step-3">
 					<div class="col-sm-6">
 						<div class="row">
 							<h2 id="seatsh">Choose the seats:</h2>
@@ -73,17 +78,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Clear</button>
-					</div>
-					<div class="col-sm-6">
-						<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()">Buy</button>
-					</div>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Clear</button>
+			</div>
+			<div class="col-sm-6">
+				<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()">Buy</button>
 			</div>
 		</div>
 	</div>
 </body>
-
+<script>
+	nextStep("");
+</script>
 </html>

@@ -1,3 +1,28 @@
+
+function nextStep(id)
+{
+	switch(id) {
+		case "step-1":
+			$("#step-3").hide();
+			$("#step-1").show();
+			$("#continuebutton").hide();
+			break
+		case "step-2":
+			$("#step-1").hide();
+			$("#step-2").show();
+			break
+		case "step-3":
+			$("#step-2").hide();
+			$("#step-3").show();
+			break
+		default:
+			$("#step-3").hide();
+			$("#step-2").hide();
+			$("#step-1").show();
+			$("#continuebutton").hide();
+	}
+}
+
 function incrementValue()
 {
     var value = parseInt(document.getElementById('tickectnum').value, 10);
@@ -23,6 +48,7 @@ function buytickets()
 {
 	window.alert("Tickets bought. Thank you!");
 	clearall();
+	nextStep("step-1");
 }
 
 function clearall()
@@ -43,6 +69,7 @@ function addseat(seat)
 	var selectedseats = document.getElementById("selectedtseats").childElementCount;
 
 	if(selectedseats < value){
+		$("#continuebutton").show();
 		var elem = document.getElementById(seat);
 		elem.parentNode.removeChild(elem);
 		
@@ -63,12 +90,13 @@ function addseat(seat)
 	}
 }
 
-movies = ['movie1', 'movie2', 'movie3', 'movie4', 'movie5', 'movie6', 'movie7', 'movie8']
+movies = ['movie1', 'movie2', 'movie3', 'movie4', 'movie5', 'movie6', 'movie7', 'movie8'];
 
 function selectmovie(movie)
 {
 	movies.forEach(unselectmovie);
 	document.getElementById(movie).style.backgroundColor = "grey";
+	nextStep("step-2");
 }
 
 function unselectmovie(item, index)
@@ -80,6 +108,7 @@ function selectimage(movie)
 {
 	movies.forEach(unselectimage);
 	document.getElementById(movie).style.border = " 5px solid black";
+	nextStep("step-2");
 }
 
 function unselectimage(item, index)

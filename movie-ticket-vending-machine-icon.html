@@ -8,17 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="css/movie_tickets/iconversion.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/movies.js"></script>
+	<script src="js/movies.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-12" id="step-1">
 				<div id="movies" class="vertical-menu">
 					<a href="#" class="active"><img src="images/fightclub.jpg" id="movie1" onclick="selectimage('movie1')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a>
 					<a href="#" ><img src="images/gone-in-the-wind.jpg" id="movie2" onclick="selectimage('movie2')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
-					<a href="#" ><img src="images/jaws.JPG" id="movie3" onclick="selectimage('movie3')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
+					<a href="#" ><img src="images/jaws.jpg" id="movie3" onclick="selectimage('movie3')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
 					<a href="#" ><img src="images/terminator.jpg" id="movie4" onclick="selectimage('movie4')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
 					<a href="#" ><img src="images/titanic.jpg" id="movie5" onclick="selectimage('movie5')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
 					<a href="#" ><img src="images/fightclub.jpg" id="movie6" onclick="selectimage('movie6')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
@@ -26,22 +26,27 @@
 					<a href="#" ><img src="images/fightclub.jpg" id="movie8" onclick="selectimage('movie8')" style="width:330px;height:200px;border:0;margin-bottom:5px;"></a> 
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<div class="row" style="margin-top:50px;">
-					<div class="col-sm-3">
-						<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 25px;"><span class="glyphicon glyphicon-minus"></span></button>
+			<div class="col-sm-12">
+				<div class="row" style="margin-top:50px;" id="step-2">
+					<div class="row">
+						<div class="col-sm-3">
+							<button type="button" id="ticketbuttonminus" class="btn btn-default" onclick="decrementValue()" style="margin-left: 25px;"><span class="glyphicon glyphicon-minus"></span></button>
+						</div>
+						<div class="col-sm-4">
+							<p id="ticketind"><span class="glyphicon glyphicon-tags" style="margin-left:30px"></span></p>
+						</div>
+						<div class="col-sm-3">
+							<button type="button" id="ticketbuttonplus" onclick="incrementValue()" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+						</div>
+						<div class="col-sm-2">
+							<input type="text" id="tickectnum" value="0" class="form-control"></input>
+						</div>
 					</div>
-					<div class="col-sm-4">
-						<p id="ticketind"><span class="glyphicon glyphicon-tags" style="margin-left:30px"></span></p>
-					</div>
-					<div class="col-sm-3">
-						<button type="button" id="ticketbuttonplus" onclick="incrementValue()" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-					</div>
-					<div class="col-sm-2">
-						<input type="text" id="tickectnum" value="0" class="form-control"></input>
+					<div class="row">
+						<button type="button" id="continue" class="btn btn-default" onclick="nextStep('step-3')"><span class="glyphicon glyphicon-play"></span></button>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" id="step-3">
 					<div class="col-sm-6">
 						<div class="row">
 							<div class="dropdown">
@@ -68,17 +73,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()"><span class="glyphicon glyphicon-remove"></span></button>
-					</div>
-					<div class="col-sm-6">
-						<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()"><span class="glyphicon glyphicon-ok"></span></button>
-					</div>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()"><span class="glyphicon glyphicon-remove"></span></button>
+			</div>
+			<div class="col-sm-6">
+				<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()"><span class="glyphicon glyphicon-ok"></span></button>
 			</div>
 		</div>
 	</div>
 </body>
-
+<script>
+	nextStep("");
+</script>
 </html>
