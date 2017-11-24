@@ -16,7 +16,7 @@ h2 {
 }
 
 #selecth {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 10px;
 	text-decoration: underline;
 }
@@ -29,9 +29,9 @@ h2 {
 }
 
 #ticketsh {
-	margin-top: 22px;
+	margin-top: -50px;
 	margin-left: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 70px;
 	text-decoration: underline;
 }
 
@@ -102,17 +102,17 @@ h2 {
 
 .vertical-menu {
     overflow-y: auto;
-	height: 370px;
+	height: 320px;
 }
 
 #step-2 {
-	margin-top: 100px;
-	padding: 100px;
+	margin-top: 50px;
+	padding: 50px;
 }
 
 #step-3 {
-		margin-top: 100px;
-	padding: 100px;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 #continue {
@@ -120,6 +120,13 @@ h2 {
 	width: 150px;
 	height: 50px;
 	margin-left: 235px;
-	margin-top: 100px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	vertical-align: middle;
+}
+
+.seatitem {
+	margin-left: 75px;
+	width: 275px;
+	height: 40px;
 }

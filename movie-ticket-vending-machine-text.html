@@ -56,16 +56,16 @@
 							<div class="dropdown">
 								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:20px;width:150px;height:40px;">Seats
 								<span class="caret"></span></button>
-								<ul class="dropdown-menu">
-									<li id="C4"><a href="#" onclick="addseat('C4')">C4</a></li>
-									<li id="C5"><a href="#" onclick="addseat('C5')">C5</a></li>
-									<li id="C6"><a href="#" onclick="addseat('C6')">C6</a></li>
-									<li id="D6"><a href="#" onclick="addseat('D6')">D6</a></li>
-									<li id="E16"><a href="#" onclick="addseat('E16')">E16</a></li>
-									<li id="E17"><a href="#" onclick="addseat('E17')">E17</a></li>
-									<li id="E18"><a href="#" onclick="addseat('E18')">E18</a></li>
-									<li id="F8"><a href="#" onclick="addseat('F8')">F8</a></li>
-									<li id="F9"><a href="#" onclick="addseat('F9')">F9</a></li>
+								<ul class="dropdown-menu" id="dropdownlist">
+									<li id="C4"><a href="#" onclick="addseat('C4', 'text')">C4</a></li>
+									<li id="C5"><a href="#" onclick="addseat('C5', 'text')">C5</a></li>
+									<li id="C6"><a href="#" onclick="addseat('C6', 'text')">C6</a></li>
+									<li id="D6"><a href="#" onclick="addseat('D6', 'text')">D6</a></li>
+									<li id="E16"><a href="#" onclick="addseat('E16', 'text')">E16</a></li>
+									<li id="E17"><a href="#" onclick="addseat('E17', 'text')">E17</a></li>
+									<li id="E18"><a href="#" onclick="addseat('E18', 'text')">E18</a></li>
+									<li id="F8"><a href="#" onclick="addseat('F8', 'text')">F8</a></li>
+									<li id="F9"><a href="#" onclick="addseat('F9', 'text')">F9</a></li>
 								</ul>
 							</div>
 						</div>
@@ -82,7 +82,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Clear</button>
+				<button type="button" id="clearbutton" class="btn btn-default" onclick="clearall()">Cancel</button>
 			</div>
 			<div class="col-sm-6">
 				<button type="button" id="continuebutton" class="btn btn-default" onclick="buytickets()">Buy</button>
@@ -92,5 +92,6 @@
 </body>
 <script>
 	nextStep("");
+	startTimer();
 </script>
 </html>

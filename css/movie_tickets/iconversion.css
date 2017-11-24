@@ -36,12 +36,11 @@ ul {
 
 
 .dropdown {
-	margin-top: 50px;
 	margin-left: 20px;
 }
 
 .list-group {
-	height: 320px;
+	height: 150px;
 
 }
 
@@ -64,7 +63,7 @@ ul {
 
 
 .vertical-menu {
-    height: 470px;
+    height: 420px;
     overflow-y: auto;
 }
 
@@ -74,6 +73,10 @@ ul {
 	margin-right: 20px;
 	font-size: 24px;
 	text-align: center;
+	background: url("../../images/on-the-go/ticket.png") no-repeat center center;
+  	background-size: cover;
+  	height: 40px;
+  	width: 40px;
 }
 
 a:active {
@@ -86,7 +89,7 @@ a:active {
 }
 
 #step-3 {
-		margin-top: 100px;
+	margin-top: 100px;
 	padding: 100px;
 }
 
@@ -94,7 +97,13 @@ a:active {
 	font-size: 20px;
 	width: 150px;
 	height: 50px;
-	margin-left: 235px;
-	margin-top: 100px;
+	margin-left: 200px;
+	margin-top: 70px;
 	vertical-align: middle;
+}
+
+.seatitem {
+	margin-left: 75px;
+	width: 275px;
+	height: 40px;
 }
