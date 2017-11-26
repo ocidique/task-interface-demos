@@ -193,16 +193,16 @@ $(document).ready(function() {
       totalPrice = 0;
       for (var i = 0; i < cart.length; i++) {
         $("#cart").append(
-          '<div class="cart-item" id="' +
+          '<li class="cart-item" id="' +
             cart[i].id +
             '">' +
-            '<div class="item-name col-md-8">' +
+            '<div class="item-name col-sm-7">' +
             cart[i].name +
             "</div>" +
-            '<div class="item-price col-md-4">' +
+            '<div class="item-price col-sm-5">' +
             cart[i].price +
             " euros </div>" +
-            "</div>"
+            "</li>"
         );
 
         totalPrice += cart[i].price;
@@ -215,6 +215,7 @@ $(document).ready(function() {
 
   $("#empty-cart").click(function() {
     cart = [];
+    totalPrice = 0;
     $("#total-price").text("Total: " + totalPrice + " euros");
     $("#cart").empty();
   });
@@ -239,10 +240,10 @@ $(document).ready(function() {
           '<div class="sub-menu-item" id="' +
             menuItem[i].id +
             '"onclick="addToCart(this.id);">' +
-            '<div class="item-name col-md-8">' +
+            '<div class="item-name col-sm-7">' +
             menuItem[i].name +
             "</div>" +
-            '<div class="item-price col-md-4">' +
+            '<div class="item-price col-sm-5">' +
             menuItem[i].price +
             " euros </div>" +
             "</div>"

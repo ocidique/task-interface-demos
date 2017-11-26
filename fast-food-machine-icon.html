@@ -15,50 +15,42 @@
   <script src="js/ubi-burgers.js"></script>
 </head>
 
-
-
 <body id="ubi-burgers">
   <div class="container-fluid">
-    <div class="row">
 
+    <div class="row header">
       <div class="col-md-12">
-
         <h1>UbiBurgers</h1>
       </div>
+    </div>
 
-      <div class="col-md-4">
-        <h2>Menu</h2>
+    <div class="row">
+      <div class="col-sm-4 column">
+        <h2 class="column-title">Menu</h2>
         <ul id="menu">
           <li id="meals">Meals</li>
           <li id="burgers">Burgers</li>
           <li id="salads">Salads</li>
           <li id="side-dishes">Side dishes</li>
+          <li id="drinks">Drinks</li>
           <li id="desserts">Desserts</li>
         </ul>
       </div>
 
-      <div class="col-md-4">
-        <h2 id="sub-menu-title"></h2>
-        <div id="sub-menu" class="row"></div>
+      <div class="col-sm-4 column">
+        <h2 id="sub-menu-title" class="column-title"></h2>
+        <ul id="sub-menu"></ul>
       </div>
 
-      <div class="col-md-4">
-        <div class="row">
-          <h2 id="cart-title" class="col-md-3"></h2>
-          <h2 id="total-price" class="col-md-9"></h2>
-        </div>
-
-        <div id="cart" class="row">
-
-        </div>
-        <button id="empty-cart">Empty cart</button>
-        <button id="buy">Buy</button>
-
+      <div class="col-sm-4 column">
+        <h2 id="total-price"></h2>
+        <ul id="cart"></ul>
+        <button id="empty-cart" class="btn btn-danger">Empty cart</button>
+        <button id="buy" class="btn btn-success">Buy</button>
       </div>
 
     </div>
   </div>
 </body>
-
 
 </html>
