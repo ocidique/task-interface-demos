@@ -1,0 +1,179 @@
+/*#menu li,
+.sub-menu-item,
+.cart-item {
+  background: #f7f7f7;
+  font-weight: bold;
+  margin: 10px 0;
+  overflow: hidden;
+}
+#menu li {
+  padding: 20px 15px;
+}
+.sub-menu-item,
+.cart-item {
+  padding: 10px 15px;
+}
+*/
+#burger-logo {
+  background: url("../../images/ubi-burgers/burger-logo.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+}
+
+#total-price {
+  background: url("../../images/ubi-burgers/cart.png") no-repeat center center;
+  background-size: cover;
+  background-position: left;
+  background-size: 50px;
+  padding-left: 60px;
+}
+
+#menu-icon {
+  background: url("../../images/ubi-burgers/menu.png") no-repeat center center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+#menu #meals,
+#menu #burgers,
+#menu #salads,
+#menu #side-dishes,
+#menu #drinks,
+#menu #desserts {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+  height: 60px;
+}
+#menu #meals {
+  background-image: url("../../images/ubi-burgers/burger-meal.png");
+}
+#menu #burgers {
+  background-image: url("../../images/ubi-burgers/burger.png");
+}
+#menu #salads {
+  background-image: url("../../images/ubi-burgers/salad.png");
+}
+#menu #side-dishes {
+  background-image: url("../../images/ubi-burgers/french-fries.png");
+}
+#menu #drinks {
+  background-image: url("../../images/ubi-burgers/drinks.png");
+}
+#menu #desserts {
+  background-image: url("../../images/ubi-burgers/ice-cream.png");
+}
+
+#sub-menu-title {
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.cheeseburger-meal,
+.double-burger-meal,
+.chicken-burger-meal,
+.small-burger-meal,
+.cheeseburger,
+.double-burger,
+.chicken-burger,
+.small-burger,
+.chicken-salad,
+.fish-salad,
+.vegan-salad,
+.french-fries,
+.chicken-legs,
+.soda,
+.juice,
+.water-bottle,
+.ice-cream,
+.pancake {
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 50px;
+}
+
+.cheeseburger-meal,
+.double-burger-meal,
+.chicken-burger-meal,
+.small-burger-meal,
+.cheeseburger,
+.chicken-burger,
+.chicken-salad,
+.fish-salad,
+.vegan-salad {
+  background-size: 125px 50px;
+  background-position: 15px center;
+}
+
+.cheeseburger-meal {
+  background-image: url("../../images/ubi-burgers/cheeseburger-meal.png");
+}
+.double-burger-meal {
+  background-image: url("../../images/ubi-burgers/double-burger-meal.png");
+}
+.chicken-burger-meal {
+  background-image: url("../../images/ubi-burgers/chicken-burger-meal.png");
+}
+.small-burger-meal {
+  background-image: url("../../images/ubi-burgers/small-burger-meal.png");
+}
+.cheeseburger {
+  background-image: url("../../images/ubi-burgers/cheeseburger.png");
+}
+.double-burger {
+  background-image: url("../../images/ubi-burgers/double-burger.png");
+}
+.chicken-burger {
+  background-image: url("../../images/ubi-burgers/chicken-burger.png");
+}
+.small-burger {
+  background-image: url("../../images/ubi-burgers/small-burger.png");
+}
+.chicken-salad {
+  background-image: url("../../images/ubi-burgers/chicken-salad.png");
+}
+.fish-salad {
+  background-image: url("../../images/ubi-burgers/fish-salad.png");
+}
+.vegan-salad {
+  background-image: url("../../images/ubi-burgers/vegan-salad.png");
+}
+.french-fries {
+  background-image: url("../../images/ubi-burgers/french-fries.png");
+}
+.chicken-legs {
+  background-image: url("../../images/ubi-burgers/chicken-legs.png");
+}
+.soda {
+  background-image: url("../../images/ubi-burgers/soda.png");
+}
+.juice {
+  background-image: url("../../images/ubi-burgers/juice.png");
+}
+.water-bottle {
+  background-image: url("../../images/ubi-burgers/water-bottle.png");
+}
+.ice-cream {
+  background-image: url("../../images/ubi-burgers/ice-cream.png");
+}
+.pancake {
+  background-image: url("../../images/ubi-burgers/pancake.png");
+}
+
+#sub-menu-meals {
+}
+#sub-menu-burgers {
+}
+#sub-menu-salad {
+}
+#sub-menu-side-dishes {
+}
+#sub-menu-drinks {
+}
+#sub-menu-desserts {
+}
