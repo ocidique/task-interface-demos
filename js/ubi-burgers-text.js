@@ -113,6 +113,9 @@ $(document).ready(function() {
   var cart = [];
   var totalPrice = 0;
 
+  var startTime;
+  var endTime;
+
   $("#menu li").click(function() {
     switch (this.id) {
       case "meals":
@@ -224,7 +227,21 @@ $(document).ready(function() {
     cart = [];
     $("#sub-menu, #sub-menu-title, #cart, #cart-title, #total-price").empty();
     $("#empty-cart, #buy").hide();
-    alert("Thanks for buying!");
+
+    endTime = performance.now();
+    var durationtime = endTime - startTime;
+    var message =
+      "Thanks for buying!\n" +
+      "Starttime: " +
+      startTime +
+      "ms\n" +
+      "Endtime: " +
+      endTime +
+      "ms\n" +
+      "Duration: " +
+      durationtime +
+      "ms";
+    alert(message);
   });
 
   function listSubMenu(menuItem, addToCart) {
@@ -252,4 +269,10 @@ $(document).ready(function() {
       }
     }
   }
+
+  function startTimer() {
+    startTime = performance.now();
+  }
+
+  startTimer();
 });

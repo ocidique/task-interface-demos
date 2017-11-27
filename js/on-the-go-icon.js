@@ -2,7 +2,7 @@ $(document).ready(function() {
   var tranportationType;
   var minAmountOfTickets = 1;
   var amountOfTickets = 1;
-  var ticketPrice = 6.80;
+  var ticketPrice = 6.8;
   var totalPrice = ticketPrice;
   var departureInterval = 20;
   var currentDepartureInterval = 20;
@@ -10,6 +10,9 @@ $(document).ready(function() {
   var currentTime = today.format("hh:mm A");
   var initialDeparture = currentDeparture();
   var currentDeparture = currentDeparture();
+
+  var startTime;
+  var endTime;
 
   $("button").click(function() {
     switch (this.id) {
@@ -89,6 +92,21 @@ $(document).ready(function() {
         $("#step-3").hide();
         $("#step-4").show();
         reset();
+
+        endTime = performance.now();
+        var durationtime = endTime - startTime;
+        var message =
+          "Thanks for buying!\n" +
+          "Starttime: " +
+          startTime +
+          "ms\n" +
+          "Endtime: " +
+          endTime +
+          "ms\n" +
+          "Duration: " +
+          durationtime +
+          "ms";
+        alert(message);
         break;
 
       case "back-to-start":
@@ -147,4 +165,10 @@ $(document).ready(function() {
     $("#departure").text(currentDepartureTime(initialDeparture));
     $("#arrival").text(arrivalTime(initialDeparture));
   }
+
+  function startTimer() {
+    startTime = performance.now();
+  }
+
+  startTimer();
 });

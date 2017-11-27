@@ -146,6 +146,9 @@ $(document).ready(function() {
     }
   ];
 
+  var startTime;
+  var endTime;
+
   var cart = [];
   var totalPrice = 0;
 
@@ -280,7 +283,21 @@ $(document).ready(function() {
     $("#sub-menu, #sub-menu-title, #cart, #cart-title, #total-price").empty();
     $("#sub-menu-title").css("background-image", "");
     $("#empty-cart, #buy").hide();
-    alert("Thanks for buying!");
+
+    endTime = performance.now();
+    var durationtime = endTime - startTime;
+    var message =
+      "Thanks for buying!\n" +
+      "Starttime: " +
+      startTime +
+      "ms\n" +
+      "Endtime: " +
+      endTime +
+      "ms\n" +
+      "Duration: " +
+      durationtime +
+      "ms";
+    alert(message);
   });
 
   function listSubMenu(menuItem, addToCart) {
@@ -309,4 +326,10 @@ $(document).ready(function() {
       }
     }
   }
+
+  function startTimer() {
+    startTime = performance.now();
+  }
+
+  startTimer();
 });
