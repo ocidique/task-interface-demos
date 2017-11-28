@@ -85,25 +85,25 @@ $(document).ready(function() {
       price: 1.0
     },
     {
-      id: 15,
+      id: 16,
       category: "drinks",
       name: "Juice",
       price: 1.0
     },
     {
-      id: 16,
+      id: 17,
       category: "drinks",
       name: "Water",
       price: 1.0
     },
     {
-      id: 17,
+      id: 18,
       category: "desserts",
       name: "Ice cream",
       price: 2.0
     },
     {
-      id: 18,
+      id: 19,
       category: "desserts",
       name: "Pancake",
       price: 3.5
